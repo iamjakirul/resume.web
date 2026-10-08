@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MD. Jakirul Islam - Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  
+  @page {
+    size: A4;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    line-height: 1.45;
+    font-size: 10.5pt;
+  }
+  
+  .resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  header {
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .header-left h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+  
+  .header-left .title {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #7c3aed;
+    margin-top: 2px;
+  }
+  
+  .header-right {
+    text-align: right;
+    font-size: 9pt;
+    color: #475569;
+    line-height: 1.5;
+  }
+  
+  .header-right a {
+    color: #475569;
+    text-decoration: none;
+  }
+  
+  .header-right a:hover {
+    color: #7c3aed;
+  }
+  
+  section {
+    margin-bottom: 14px;
+  }
+  
+  h2 {
+    font-size: 11.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #0f172a;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 14px;
+    background: #7c3aed;
+    border-radius: 2px;
+  }
+  
+  .summary-text {
+    color: #334155;
+    font-size: 9.5pt;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  .entry {
+    margin-bottom: 9px;
+  }
+  
+  .entry:last-child {
+    margin-bottom: 0;
+  }
+  
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  
+  .entry-title {
+    font-weight: 600;
+    font-size: 10pt;
+    color: #0f172a;
+  }
+  
+  .entry-subtitle {
+    font-weight: 500;
+    font-size: 9.5pt;
+    color: #64748b;
+  }
+  
+  .entry-date {
+    font-size: 9pt;
+    color: #64748b;
+    font-weight: 500;
+  }
+  
+  .entry-grade {
+    font-weight: 600;
+    color: #047857;
+    font-size: 9pt;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 3px;
+  }
+  
+  li {
+    font-size: 9pt;
+    color: #334155;
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 2.5px;
+    line-height: 1.4;
+  }
+  
+  li::before {
+    content: '•';
+    position: absolute;
+    left: 2px;
+    color: #7c3aed;
+    font-weight: bold;
+  }
+  
+  .tech-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    row-gap: 5px;
+    column-gap: 12px;
+    font-size: 9pt;
+  }
+  
+  .skill-category {
+    font-weight: 600;
+    color: #0f172a;
+  }
+  
+  .skill-items {
+    color: #334155;
+  }
+</style>
+</head>
+<body>
+<div class="resume-container">
+  <header>
+    <div class="header-left">
+      <h1>MD. Jakirul Islam</h1>
+      <div class="title">Aspiring AI & Software Developer | CSE Undergraduate</div>
+    </div>
+    <div class="header-right">
+      <div>📧 <a href="mailto:jakirulislam.cse@gmail.com">jakirulislam.cse@gmail.com</a></div>
+      <div>📱 +8801935250083</div>
+      <div>📍 Savar, Dhaka, Bangladesh</div>
+      <div>🔗 linkedin.com/in/jakirul-islam01</div>
+      <div>💻 github.com/iamjakirul</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary-text">
+      Motivated 5th-semester Computer Science & Engineering undergraduate at Daffodil International University with strong foundations in C, C++, Data Structures, Algorithms, and Object-Oriented Programming. Passionate about architecting efficient low-level systems, tackling algorithmic challenges in competitive programming, and actively expanding into AI/Machine Learning solutions.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">B.Sc. in Computer Science & Engineering</span>
+        <span class="entry-date">Expected Fall 2028</span>
+      </div>
+      <div class="entry-header">
+        <span class="entry-subtitle">Daffodil International University (DIU), Dhaka</span>
+        <span class="entry-grade">5th Semester Student</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Higher Secondary Certificate (HSC) - Science</span>
+        <span class="entry-date">2022</span>
+      </div>
+      <div class="entry-header">
+        <span class="entry-subtitle">National College of Education</span>
+        <span class="entry-grade">GPA 5.00 / 5.00</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Secondary School Certificate (SSC) - Science</span>
+        <span class="entry-date">2020</span>
+      </div>
+      <div class="entry-header">
+        <span class="entry-subtitle">Narsingdi Model School</span>
+        <span class="entry-grade">GPA 4.94 / 5.00</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Projects</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Hall-Canteen-Portal <span class="tech-tag">C</span><span class="tech-tag">CLI</span><span class="tech-tag">Structs</span><span class="tech-tag">File I/O</span></span>
+      </div>
+      <ul>
+        <li>Designed and developed a terminal-based university hall management ecosystem featuring role-based authentication for students, staff, and administrators.</li>
+        <li>Implemented real-time room allocation matrix, automated token generation for canteen dining, and dynamic monthly billing persistence using custom C structures and binary files.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Hall Student Management System <span class="tech-tag">C</span><span class="tech-tag">Linked Lists</span><span class="tech-tag">Dynamic Memory</span></span>
+      </div>
+      <ul>
+        <li>Engineered a high-performance student record management system utilizing Singly Linked Lists for dynamic node allocation, insertions, deletions, and search operations.</li>
+        <li>Eliminated fixed memory constraints by leveraging heap allocation (malloc/free) and integrated persistent file I/O for saving and restoring records across sessions.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Hospital Queue Manager <span class="tech-tag">C</span><span class="tech-tag">Priority Queue</span><span class="tech-tag">Greedy Algorithm</span><span class="tech-tag">ANSI UI</span></span>
+      </div>
+      <ul>
+        <li>Built an emergency medical triage priority management system applying greedy heuristics to sort and dispatch patients based on clinical criticality levels.</li>
+        <li>Crafted an interactive ANSI color-coded console interface allowing healthcare staff to monitor real-time queue states and patient vitals.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Achievements & Extracurriculars</h2>
+    <ul>
+      <li><strong>Finalist, Take-off Programming Contest</strong> — Competed and solved complex algorithmic problems under tight time bounds.</li>
+      <li><strong>Contestant, Unlock the Algorithm</strong> — Participated in university-wide competitive programming contest demonstrating proficiency in graph and array manipulation.</li>
+      <li><strong>Math Olympiad Participant & Awardee</strong> — Demonstrated strong analytical thinking and discrete mathematical problem-solving skills.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">Languages:</div>
+      <div class="skill-items">C, C++, Java, Python</div>
+      
+      <div class="skill-category">Core Concepts:</div>
+      <div class="skill-items">Data Structures, Algorithms, Object-Oriented Programming (OOP), Dynamic Memory Management, AI/ML (Foundations)</div>
+      
+      <div class="skill-category">Tools & IDEs:</div>
+      <div class="skill-items">VS Code, Codeblocks, Git, GitHub, Terminal / Bash CLI, Linux</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

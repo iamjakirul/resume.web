@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a14"/>
+      <stop offset="50%" stop-color="#0d1322"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad3)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Ambient light -->
+  <circle cx="700" cy="120" r="150" fill="#ef4444" opacity="0.1"/>
+  <circle cx="120" cy="350" r="150" fill="#10b981" opacity="0.1"/>
+
+  <!-- Terminal Window Bar -->
+  <rect x="24" y="24" width="752" height="402" rx="12" fill="#090d18" stroke="#334155" stroke-width="1.2"/>
+  <rect x="24" y="24" width="752" height="44" rx="12" fill="#0f172a"/>
+  
+  <!-- Buttons -->
+  <circle cx="52" cy="46" r="6.5" fill="#ef4444"/>
+  <circle cx="74" cy="46" r="6.5" fill="#f59e0b"/>
+  <circle cx="96" cy="46" r="6.5" fill="#10b981"/>
+
+  <text x="400" y="51" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="500" text-anchor="middle">
+    hospital_triage_queue.c - Max-Heap Priority Queue &amp; Greedy Triage
+  </text>
+  
+  <rect x="670" y="36" width="86" height="20" rx="10" fill="rgba(239, 68, 68, 0.2)"/>
+  <text x="713" y="50" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">EMERGENCY</text>
+
+  <!-- Content: Hospital Triage & Queue Monitor -->
+  <g font-family="'JetBrains Mono', monospace">
+    <!-- Status Ticker -->
+    <rect x="50" y="86" width="690" height="44" rx="8" fill="#141a29" stroke="#1f293d"/>
+    <text x="70" y="113" fill="#f87171" font-size="13" font-weight="bold">🚨 LIVE TRIAGE QUEUE:</text>
+    <text x="240" y="113" fill="#cbd5e1" font-size="12">Heap Size: <tspan fill="#38bdf8" font-weight="bold">18</tspan> | Critical: <tspan fill="#ef4444" font-weight="bold">2</tspan> | Urgent: <tspan fill="#f59e0b" font-weight="bold">6</tspan> | Normal: <tspan fill="#10b981" font-weight="bold">10</tspan></text>
+
+    <!-- Triage Priority Level Cards -->
+    <!-- Priority 1 - Critical (Red) -->
+    <rect x="50" y="146" width="220" height="150" rx="8" fill="#18131e" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="50" y="146" width="220" height="28" rx="8" fill="rgba(239, 68, 68, 0.25)"/>
+    <text x="160" y="165" fill="#fca5a5" font-size="11" font-weight="bold" text-anchor="middle">LEVEL 1 • CRITICAL (HEAP ROOT)</text>
+    <text x="64" y="196" fill="#f8fafc" font-size="12" font-weight="bold">Patient #P-901</text>
+    <text x="64" y="216" fill="#94a3b8" font-size="11">Severity Score: <tspan fill="#ef4444" font-weight="bold">98 / 100</tspan></text>
+    <text x="64" y="236" fill="#94a3b8" font-size="11">Condition: Acute Cardiac</text>
+    <text x="64" y="256" fill="#94a3b8" font-size="11">Wait Time: 0 min (IMMEDIATE)</text>
+    <rect x="64" y="268" width="90" height="18" rx="4" fill="#ef4444"/>
+    <text x="109" y="281" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">ICU BED 01</text>
+
+    <!-- Priority 2 - Urgent (Amber) -->
+    <rect x="285" y="146" width="220" height="150" rx="8" fill="#181816" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="285" y="146" width="220" height="28" rx="8" fill="rgba(245, 158, 11, 0.25)"/>
+    <text x="395" y="165" fill="#fcd34d" font-size="11" font-weight="bold" text-anchor="middle">LEVEL 2 • URGENT CARE</text>
+    <text x="299" y="196" fill="#f8fafc" font-size="12" font-weight="bold">Patient #P-884</text>
+    <text x="299" y="216" fill="#94a3b8" font-size="11">Severity Score: <tspan fill="#f59e0b" font-weight="bold">74 / 100</tspan></text>
+    <text x="299" y="236" fill="#94a3b8" font-size="11">Condition: Fracture / Trauma</text>
+    <text x="299" y="256" fill="#94a3b8" font-size="11">Wait Time: 8 min</text>
+    <rect x="299" y="268" width="105" height="18" rx="4" fill="#d97706"/>
+    <text x="351" y="281" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">SURGICAL BAY 2</text>
+
+    <!-- Priority 3 - Standard (Green) -->
+    <rect x="520" y="146" width="220" height="150" rx="8" fill="#101c1c" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="520" y="146" width="220" height="28" rx="8" fill="rgba(16, 185, 129, 0.25)"/>
+    <text x="630" y="165" fill="#6ee7b7" font-size="11" font-weight="bold" text-anchor="middle">LEVEL 3 • STABLE / OUTPATIENT</text>
+    <text x="534" y="196" fill="#f8fafc" font-size="12" font-weight="bold">Patient #P-762</text>
+    <text x="534" y="216" fill="#94a3b8" font-size="11">Severity Score: <tspan fill="#10b981" font-weight="bold">32 / 100</tspan></text>
+    <text x="534" y="236" fill="#94a3b8" font-size="11">Condition: Fever / General</text>
+    <text x="534" y="256" fill="#94a3b8" font-size="11">Wait Time: 22 min</text>
+    <rect x="534" y="268" width="100" height="18" rx="4" fill="#059669"/>
+    <text x="584" y="281" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">CONSULTING RM 4</text>
+
+    <!-- Bottom CLI log -->
+    <rect x="50" y="312" width="690" height="92" rx="8" fill="#040711" stroke="#1e293b"/>
+    <text x="70" y="338" fill="#38bdf8" font-size="12">&gt; [ALGORITHM]: Greedy Triage Heuristic dispatched Patient #P-901 in O(log N) heap extraction.</text>
+    <text x="70" y="360" fill="#34d399" font-size="12">&gt; [MEMORY]: Dynamic array-based Binary Max-Heap rescaled. Zero fragmentation.</text>
+    <text x="70" y="382" fill="#c084fc" font-size="12">&gt; [ANSI UI]: Multi-color terminal rendering refreshed. Doctors alerted in real time.</text>
+  </g>
+</svg>

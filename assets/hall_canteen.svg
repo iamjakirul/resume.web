@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Subtle ambient glow circle -->
+  <circle cx="700" cy="80" r="180" fill="#8b5cf6" opacity="0.12" filter="url(#glowEffect)"/>
+  <circle cx="100" cy="380" r="140" fill="#06b6d4" opacity="0.1" filter="url(#glowEffect)"/>
+
+  <!-- Terminal Window Bar -->
+  <rect x="24" y="24" width="752" height="402" rx="12" fill="#090d16" stroke="#334155" stroke-width="1.2"/>
+  <rect x="24" y="24" width="752" height="44" rx="12" fill="#0f172a"/>
+  
+  <!-- macOS style buttons -->
+  <circle cx="52" cy="46" r="6.5" fill="#ef4444"/>
+  <circle cx="74" cy="46" r="6.5" fill="#f59e0b"/>
+  <circle cx="96" cy="46" r="6.5" fill="#10b981"/>
+
+  <!-- Title bar info -->
+  <text x="400" y="51" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="500" text-anchor="middle">
+    hall_canteen_portal.c - gcc -Wall (CLI System)
+  </text>
+  
+  <rect x="680" y="36" width="76" height="20" rx="10" fill="#1e293b"/>
+  <circle cx="692" cy="46" r="3.5" fill="#10b981"/>
+  <text x="702" y="50" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">LIVE</text>
+
+  <!-- Terminal Body Content -->
+  <g font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13">
+    <!-- Prompt line -->
+    <text x="50" y="100" fill="#38bdf8" font-weight="600">admin@diu-hall:~$</text>
+    <text x="210" y="100" fill="#f1f5f9">./hall_canteen --role=admin</text>
+
+    <!-- Banner -->
+    <text x="50" y="132" fill="#a855f7" font-weight="bold">╔════════════════════════════════════════════════════════════════╗</text>
+    <text x="50" y="152" fill="#a855f7" font-weight="bold">║   ★ DIU SMART HALL &amp; CANTEEN MANAGEMENT PORTAL [v2.4] ★        ║</text>
+    <text x="50" y="172" fill="#a855f7" font-weight="bold">╚════════════════════════════════════════════════════════════════╝</text>
+
+    <!-- Table Header -->
+    <rect x="50" y="194" width="690" height="26" fill="#1e293b" rx="4"/>
+    <text x="64" y="212" fill="#cbd5e1" font-weight="600">ROOM</text>
+    <text x="140" y="212" fill="#cbd5e1" font-weight="600">STUDENT ID</text>
+    <text x="280" y="212" fill="#cbd5e1" font-weight="600">NAME</text>
+    <text x="440" y="212" fill="#cbd5e1" font-weight="600">MEAL TOKENS</text>
+    <text x="590" y="212" fill="#cbd5e1" font-weight="600">STATUS</text>
+
+    <!-- Row 1 -->
+    <text x="64" y="246" fill="#38bdf8">#B-402</text>
+    <text x="140" y="246" fill="#f8fafc">231-15-4892</text>
+    <text x="280" y="246" fill="#e2e8f0">Jakirul Islam</text>
+    <text x="440" y="246" fill="#10b981">62 (Active)</text>
+    <rect x="590" y="234" width="82" height="18" rx="9" fill="rgba(16, 185, 129, 0.2)"/>
+    <text x="606" y="247" fill="#34d399" font-size="11" font-weight="600">ALLOCATED</text>
+
+    <!-- Row 2 -->
+    <text x="64" y="278" fill="#38bdf8">#B-403</text>
+    <text x="140" y="278" fill="#f8fafc">231-15-5102</text>
+    <text x="280" y="278" fill="#e2e8f0">Tanvir Ahmed</text>
+    <text x="440" y="278" fill="#10b981">45 (Active)</text>
+    <rect x="590" y="266" width="82" height="18" rx="9" fill="rgba(16, 185, 129, 0.2)"/>
+    <text x="606" y="279" fill="#34d399" font-size="11" font-weight="600">ALLOCATED</text>
+
+    <!-- Row 3 -->
+    <text x="64" y="310" fill="#38bdf8">#B-404</text>
+    <text x="140" y="310" fill="#94a3b8">-- Vacant --</text>
+    <text x="280" y="310" fill="#64748b">-- None --</text>
+    <text x="440" y="310" fill="#64748b">0 Tokens</text>
+    <rect x="590" y="298" width="82" height="18" rx="9" fill="rgba(245, 158, 11, 0.2)"/>
+    <text x="612" y="311" fill="#fbbf24" font-size="11" font-weight="600">OPEN</text>
+
+    <!-- Interactive stats badge -->
+    <rect x="50" y="340" width="210" height="60" rx="8" fill="#141c2e" stroke="#2563eb" stroke-width="1"/>
+    <text x="66" y="362" fill="#94a3b8" font-size="11">Total Rooms</text>
+    <text x="66" y="388" fill="#f8fafc" font-size="20" font-weight="bold">120 <tspan fill="#38bdf8" font-size="12">/ 94% Occ.</tspan></text>
+
+    <rect x="280" y="340" width="210" height="60" rx="8" fill="#141c2e" stroke="#7c3aed" stroke-width="1"/>
+    <text x="296" y="362" fill="#94a3b8" font-size="11">Today's Meals</text>
+    <text x="296" y="388" fill="#c084fc" font-size="20" font-weight="bold">348 <tspan fill="#10b981" font-size="12">Tokens Issued</tspan></text>
+
+    <rect x="510" y="340" width="230" height="60" rx="8" fill="#141c2e" stroke="#059669" stroke-width="1"/>
+    <text x="526" y="362" fill="#94a3b8" font-size="11">Architecture</text>
+    <text x="526" y="386" fill="#34d399" font-size="14" font-weight="600">C Structs + File I/O</text>
+  </g>
+</svg>
